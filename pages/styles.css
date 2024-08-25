@@ -1,5 +1,6 @@
 :root {
   --border-color: #252134;
+  --first-color: #6f00ff;
   color-scheme: dark;
 }
 
@@ -24,6 +25,11 @@ header {
   z-index: 50;
 
   border-bottom: var(--border-color) 1px solid;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
 }
 
 .flex-header {
@@ -55,8 +61,64 @@ header {
 }
 
 .login-box {
-  border: var(--border-color) 1px solid;
+  /* border: var(--border-color) 1px solid; */
   border-radius: 20px;
-  padding: 3rem 2rem;
-  background-color: ;
+  width: 20rem;
+  padding: 2rem 2rem;
+  background-color: rgba(38, 36, 44, 0.5);
+}
+
+.first-button {
+  font-family: inherit;
+  background-color: var(--first-color);
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.input-text {
+  width: 100%;
+  height: 2rem;
+  border: #43435c 1px solid;
+  border-radius: 5px;
+  font-size: inherit;
+  color: #ada8c3;
+}
+
+.c {
+  color: #ac6aff;
+  color: #ffc876;
+  color: #ff776f;
+  color: #7adb78;
+  color: #858dff;
+  color: #ff98e2;
+  color: #ffffff;
+  color: #cac6dd;
+  color: #ada8c3;
+  color: #757185;
+  color: #3f3a52;
+  color: #252134;
+  color: #15131d;
+  color: #474060;
+  color: #43435c;
+  color: #1b1b2e;
+  color: #2e2a41;
+  color: #6c7275;
+
+  /* Fondo de login */
+  color: #26242c;
+
+  /* Color de fondo */
+  color: #0e0c15;
 }
