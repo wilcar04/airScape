@@ -1,6 +1,8 @@
 :root {
   --border-color: #252134;
   --first-color: #6f00ff;
+  --second-color: #2B7CFF;
+  --anchor-color: #409CFF;
   color-scheme: dark;
 }
 
@@ -32,6 +34,12 @@ label {
   margin-bottom: 5px;
 }
 
+a {
+  cursor: pointer;
+  color: var(--anchor-color);
+  text-decoration: underline;
+}
+
 .flex-header {
   display: flex;
   align-items: center;
@@ -43,7 +51,7 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  
   min-height: 100vh;
 }
 
@@ -78,9 +86,11 @@ label {
   width: 100%;
   padding: 0.5rem 2rem;
   cursor: pointer;
+  
 }
 
 .form {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -88,18 +98,24 @@ label {
 }
 
 .input-text {
+  box-sizing: border-box;
   width: 100%;
-  height: 2rem;
+  height: 2.8rem;
   border: #43435c 1px solid;
   border-radius: 5px;
-  font-size: inherit;
+  font-size: 1.1rem;
   color: #ada8c3;
+  padding-left: 1rem;
+}
+
+
+.error {
+  color: #ff776f;
+  margin-top: 1rem;
 }
 
 .c {
-  color: #ac6aff;
   color: #ffc876;
-  color: #ff776f;
   color: #7adb78;
   color: #858dff;
   color: #ff98e2;
