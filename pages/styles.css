@@ -1,8 +1,8 @@
 :root {
-  --border-color: #252134;
+  --border-color: #2e2a41;
   --first-color: #6f00ff;
-  --second-color: #2B7CFF;
-  --anchor-color: #409CFF;
+  --second-color: #2b7cff;
+  --anchor-color: #409cff;
   color-scheme: dark;
 }
 
@@ -25,6 +25,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 50;
+  background-color: #15131d;
 
   border-bottom: var(--border-color) 1px solid;
 }
@@ -51,7 +52,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   min-height: 100vh;
 }
 
@@ -63,8 +64,8 @@ a {
 }
 
 .logo img {
-  width: 190px;
-  height: 60px;
+  max-width: 100%;
+  height: auto;
   margin: auto;
 }
 
@@ -77,6 +78,7 @@ a {
 }
 
 .first-button {
+  height: 2.8rem;
   font-family: inherit;
   background-color: var(--first-color);
   font-weight: 600;
@@ -86,7 +88,6 @@ a {
   width: 100%;
   padding: 0.5rem 2rem;
   cursor: pointer;
-  
 }
 
 .form {
@@ -108,10 +109,118 @@ a {
   padding-left: 1rem;
 }
 
-
 .error {
   color: #ff776f;
   margin-top: 1rem;
+}
+
+/* Landing styles */
+
+.exit {
+  text-decoration: none;
+  color: #ada8c3;
+  height: auto;
+  transition: 300ms;
+  font-size: 1.4rem;
+}
+
+.exit:hover {
+  color: var(--first-color);
+}
+
+nav {
+  display: flex;
+  gap: 5rem;
+  margin-left: 5rem;
+  flex-grow: 1;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 300ms;
+  opacity: 0.5;
+}
+
+nav a:hover {
+  opacity: 1;
+}
+
+.container {
+  padding: 4rem 5rem;
+  margin-top: 5rem;
+}
+
+.hero {
+  max-width: 70%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.hero p {
+  color: #ada8c3;
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.grid {
+  border: var(--border-color) 1px solid;
+  margin-top: 5rem;
+  border-radius: 2rem;
+  padding: 4rem;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.property {
+  border: var(--border-color) 1px solid;
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.image-container {
+  height: 70%;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+
+.property img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-container {
+  margin: 10px 0;
+  color: #cac6dd;
+}
+
+.info-container h6 {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.review {
+  color: #ffc876;
+  margin-top: auto;
+  margin-left: auto;
+  width: fit-content;
+}
+
+.review p {
+  display: inline;
 }
 
 .c {
