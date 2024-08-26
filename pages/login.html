@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" href="./assets/favicon2.png" />
   </head>
   <body>
+    <script src="./scripts.js"></script>
     <header>
       <div class="flex-header">
         <a class="logo" href="#home">
@@ -33,17 +34,17 @@
             <div class="form">
               <div class="input-container">
                 <label>Username</label>
-                <input type="text" class="input-text" />
+                <input type="text" class="input-text" id="login-username"/>
               </div>
 
               <div class="input-container">
                 <label>Password</label>
-                <input type="password" class="input-text" />
+                <input type="password" class="input-text" id="login-password" />
               </div>
             </div>
 
-            <button class="first-button">Log In</button>
-            <p class="error">This is an error.</p>
+            <button class="first-button" onclick="login()">Log In</button>
+            <p class="error" id="login-error"></p>
           </div>
         </div>
       </div>
