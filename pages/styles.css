@@ -25,7 +25,8 @@ header {
   left: 0;
   width: 100%;
   z-index: 50;
-  background-color: #15131d;
+  background-color: rgba(21, 19, 29, 0.9);
+  backdrop-filter: blur(10px);
 
   border-bottom: var(--border-color) 1px solid;
 }
@@ -52,8 +53,10 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .logo {
@@ -74,7 +77,7 @@ a {
   border-radius: 20px;
   width: 20rem;
   padding: 2rem 2rem;
-  background-color: rgba(38, 36, 44, 0.5);
+  background-color: rgba(38, 36, 44, 0.8);
 }
 
 .first-button {
@@ -149,6 +152,7 @@ nav a:hover {
 .container {
   padding: 4rem 5rem;
   margin-top: 5rem;
+  position: relative;
 }
 
 .hero {
@@ -221,6 +225,26 @@ h1 {
 
 .review p {
   display: inline;
+}
+
+.blur-purple {
+  background: radial-gradient(
+      circle at 50% 45%,
+      rgba(111, 0, 255, 0.8),
+      transparent 60%
+    ),
+    radial-gradient(circle at 50% 60%, rgba(255, 68, 68, 0.5), transparent 60%),
+    radial-gradient(circle at 50% 60%, rgba(255, 174, 0, 0.3), transparent 52%);
+  background-blend-mode: overlay;
+
+  width: 1000px;
+  height: 1000px;
+
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-40%, 0) scale(1.2);
+  opacity: 0.6;
 }
 
 .c {
