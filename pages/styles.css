@@ -61,7 +61,8 @@ a {
 
 .logo {
   display: flex;
-  width: 12rem;
+  min-width: 12rem;
+  max-width: 12rem;
   line-height: 0;
   height: 5rem;
 }
@@ -177,10 +178,10 @@ h1 {
   border: var(--border-color) 1px solid;
   margin-top: 5rem;
   border-radius: 2rem;
-  padding: 4rem;
+  padding: 4rem 2rem;
   display: grid;
-  gap: 30px;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .property {
@@ -189,6 +190,8 @@ h1 {
   border-radius: 1rem;
   padding: 1rem;
   cursor: pointer;
+  width: 250px;
+  margin: 0 auto;
 }
 
 .image-container {
@@ -198,7 +201,7 @@ h1 {
 }
 
 .property img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
 }
@@ -247,27 +250,28 @@ h1 {
   opacity: 0.6;
 }
 
-.c {
-  color: #ffc876;
-  color: #7adb78;
-  color: #858dff;
-  color: #ff98e2;
-  color: #ffffff;
-  color: #cac6dd;
-  color: #ada8c3;
-  color: #757185;
-  color: #3f3a52;
-  color: #252134;
-  color: #15131d;
-  color: #474060;
-  color: #43435c;
-  color: #1b1b2e;
-  color: #2e2a41;
-  color: #6c7275;
+@media (max-width: 768px) {
+  .container {
+    padding: 5rem 1rem;
+  }
 
-  /* Fondo de login */
-  color: #26242c;
+  .hero {
+    padding: 0;
+  }
 
-  /* Color de fondo */
-  color: #0e0c15;
+  .hero h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .flex-header {
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  nav,
+  .exit {
+    display: none;
+  }
 }
