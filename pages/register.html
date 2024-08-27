@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" href="./assets/favicon2.png" />
   </head>
   <body>
+    <script src="./scripts.js"></script>
     <header>
       <div class="flex-header">
         <a class="logo" href="./home.html">
@@ -29,26 +30,27 @@
             <p>Already registered? <a href="./login.html">Log In</a></p>
           </div>
 
-          <div class="form">
-            <div class="username">
-              <label>Username</label>
-              <input type="text" class="input-text" />
-            </div>
+            <div class="form">
+              <div class="username">
+                <label>Username</label>
+                <input type="text" class="input-text" id="register-username"/>
+              </div>
 
-            <div class="password">
-              <label>Password</label>
-              <input type="password" class="input-text" />
-            </div>
+              <div class="password">
+                <label>Password</label>
+                <input type="password" class="input-text" id="register-password"/>
+              </div>  
 
-            <div class="password">
-              <label>Confirm password</label>
-              <input type="password" class="input-text" />
+              <div class="password">
+                <label>Confirm password</label>
+                <input type="password" class="input-text" id="register-confirm-password"/>
+              </div>
             </div>
           </div>
 
-          <button class="first-button">Sign Up</button>
-
-          <p class="error"></p>
+            <button class="first-button" onclick="register()">Sign Up</button>
+            <p class="error" id="register-error"></p>
+          </div>
         </div>
       </div>
 
