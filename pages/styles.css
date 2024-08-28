@@ -151,7 +151,7 @@ nav a:hover {
 }
 
 .container {
-  padding: 4rem 5rem;
+  padding: 4rem 3rem;
   margin-top: 5rem;
   position: relative;
 }
@@ -178,10 +178,10 @@ h1 {
   border: var(--border-color) 1px solid;
   margin-top: 5rem;
   border-radius: 2rem;
-  padding: 4rem 2rem;
+  padding: 4rem 0.5rem;
   display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 
 .property {
@@ -251,10 +251,6 @@ h1 {
 }
 
 @media (max-width: 768px) {
-  .container {
-    padding: 5rem 1rem;
-  }
-
   .hero {
     padding: 0;
   }
@@ -270,6 +266,9 @@ h1 {
 }
 
 @media (max-width: 1024px) {
+  .container {
+    padding: 5rem 1rem;
+  }
   nav,
   .exit {
     display: none;
